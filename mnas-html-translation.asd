@@ -6,5 +6,9 @@
   :license  "Specify license here"
   :version "0.0.1"
   :serial t
+  :depends-on ("plump"
+               "cl-ppcre"
+               ;;               "mnas-dict"
+               )
   :components ((:file "package")
                (:file "mnas-html-translation")))

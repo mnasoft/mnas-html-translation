@@ -2,6 +2,8 @@
 
 (defpackage #:mnas-html-translation
   (:use #:cl)
+  (:export has-tag-in-parent
+           parent-tags )
   (:export get-ch
            deep-ch
            is-all-of-type
@@ -12,7 +14,11 @@
            parse-path
            extract-strings-by-tag
            get-html-string
-           get-html-strings))
+           get-html-strings
+           )
+  (:export make-translation
+           make-translations
+           ))
 
 (in-package :mnas-html-translation)
 
